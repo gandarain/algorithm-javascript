@@ -1,0 +1,21 @@
+{
+  "name": "algorithm-javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/binary_search.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gandarain/algorithm-javascript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gandarain/algorithm-javascript/issues"
+  },
+  "homepage": "https://github.com/gandarain/algorithm-javascript#readme"
+}
