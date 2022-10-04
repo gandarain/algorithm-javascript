@@ -13,21 +13,17 @@ const binarySearch = (value, list) => {
   let mid;
 
   while (found === false && low <= high) {
-    mid = Math.floor((low + high)/2);
-    if (list[mid] == value) {
-        found = true;
-        position = mid;
+    mid = Math.floor((low + high) / 2);
+    if (list[mid] === value) {
+      found = true;
+      position = mid;
     } else if (list[mid] > value) {
-        high = mid - 1;
+      high = mid - 1;
     } else {
-        low = mid + 1;
+      low = mid + 1;
     }
   }
   return position;
-}
+};
 
-const array = [0, 1, 3, 5, 9, 12, 13, 16]
-const searchedValue = 13
-
-const result = binarySearch(searchedValue, array);
-console.log('Your searched value at the index ', result);
+export default binarySearch;
