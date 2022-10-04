@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node --experimental-specifier-resolution=node index.js",
     "lint": "eslint .",
-    "lint-fix": "eslint src --ext .js --fix"
+    "prepare": "husky install",
+    "lint-fix": "eslint src --ext .js --fix",
+    "pre-commit": "make pre-commit"
   },
   "repository": {
     "type": "git",
@@ -28,13 +30,5 @@
   "type": "module",
   "dependencies": {
     "husky": "^8.0.1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*": "npm run lint"
   }
 }
