@@ -30,5 +30,10 @@
   "type": "module",
   "dependencies": {
     "husky": "^8.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "eslint ."
+    }
   }
 }
