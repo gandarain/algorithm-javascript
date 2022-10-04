@@ -11,3 +11,12 @@ Binary search works on sorted arrays. Binary search begins by comparing an eleme
 Linear Search is defined as a sequential search algorithm that starts at one end and goes through each element of a list until the desired element is found, otherwise the search continues till the end of the data set. It is the easiest searching algorithm
 
 A linear search sequentially checks each element of the list until it finds an element that matches the target value. If the algorithm reaches the end of the list, the search terminates unsuccessfully.
+
+
+### Contribute & Setup
+Setup
+- npm install
+- npm start
+
+Contribute
+Make sure your PR passed the pipeline.
