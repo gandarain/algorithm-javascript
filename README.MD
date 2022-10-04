@@ -14,9 +14,11 @@ A linear search sequentially checks each element of the list until it finds an e
 
 
 ### Contribute & Setup
-Setup
+#### How to Setup
 - npm install
 - npm start
 
-Contribute
-Make sure your PR passed the pipeline.
+#### How to Contribute
+Make sure your PR passed the pipeline
+
+
