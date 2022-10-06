@@ -1,11 +1,16 @@
+import { otpGenerator } from './src/random-generator';
 import { binarySearch, linearSearch } from './src/search';
 
 /// Binary Search
 const array = [0, 1, 3, 5, 9, 12, 13, 16];
 const searchedValue = 13;
+const lengthOtp = 6;
 
 const binarySearchResult = binarySearch(searchedValue, array);
 console.log(`Binary Search Result ${binarySearchResult} \n`);
 
 const linearSearchResult = linearSearch(searchedValue, array);
 console.log(`Binary Search Result ${linearSearchResult} \n`);
+
+const otpResult = otpGenerator(lengthOtp);
+console.log(`OTP Result ${otpResult} \n`);
