@@ -1,5 +1,6 @@
 import { otpGenerator, passwordGenerator } from './src/random-generator';
 import { binarySearch, linearSearch } from './src/search';
+import caesarChiper from './src/caesar-cipher';
 
 /// Binary Search
 const array = [0, 1, 3, 5, 9, 12, 13, 16];
@@ -18,3 +19,6 @@ console.log(`OTP Result ${otpResult} \n`);
 
 const password = passwordGenerator(lengthPassword);
 console.log(`Password Result ${password} \n`);
+
+const caesarCipherResult = caesarChiper('hello World', 1);
+console.log(`Caesar Cipher ${caesarCipherResult}`);
