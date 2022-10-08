@@ -1,6 +1,5 @@
 /**
  * Generate random otp based on length
- * Use Jump Search for sorted array
  * @param {number} length value
  * @return {string} random otp number
  */
