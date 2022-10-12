@@ -1,5 +1,5 @@
 import { otpGenerator, passwordGenerator } from './src/random-generator';
-import { binarySearch, linearSearch } from './src/search';
+import { binarySearch, linearSearch, interpolationSearch } from './src/search';
 import caesarChiper from './src/caesar-cipher';
 
 /// Binary Search
@@ -21,4 +21,10 @@ const password = passwordGenerator(lengthPassword);
 console.log(`Password Result ${password} \n`);
 
 const caesarCipherResult = caesarChiper('hello World', 1);
-console.log(`Caesar Cipher ${caesarCipherResult}`);
+console.log(`Caesar Cipher ${caesarCipherResult} \n`);
+
+const arr = [10, 12, 13, 16, 18, 19, 20, 21, 22, 23, 24, 33, 35, 42, 47];
+const n = arr.length;
+const x = 18;
+const interpolationSearchResult = interpolationSearch(arr, 0, n - 1, x);
+console.log(`Interpolation Search ${interpolationSearchResult}`);
