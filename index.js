@@ -3,6 +3,7 @@ import {
   binarySearch, linearSearch, interpolationSearch, exponentialSearch,
 } from './src/search';
 import caesarChiper from './src/caesar-cipher';
+import mergeSort from './src/sorting/merge_sort';
 
 /// Binary Search
 const array = [0, 1, 3, 5, 9, 12, 13, 16];
@@ -36,3 +37,8 @@ n = arr.length;
 x = 10;
 const exponentialSearchResult = exponentialSearch(arr, n, x);
 console.log(`Exponential Search ${exponentialSearchResult} \n`);
+
+const unsortedArray = [39, 28, 44, 4, 10, 83, 11];
+console.log(`Unsorted array ${unsortedArray}`);
+const sortedArray = mergeSort(unsortedArray);
+console.log(`Merge Sorted array ${sortedArray}\n`);
